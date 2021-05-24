@@ -1,7 +1,13 @@
-.work.section {
-    padding-top: 0;
+
+.work {
+  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;   
   }
-  
+}
+
   .work-list {
     display: flex;
     margin-left: -30px;
