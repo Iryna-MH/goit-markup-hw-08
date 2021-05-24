@@ -1,6 +1,7 @@
-@import'./utils/variables';
-@import'./utils/base';
-@import'./components/container';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/breakpoints';
+@import './components/container';
 @import './components/modal';
 @import './components/logo';
 @import './layout/header';
