@@ -1,10 +1,4 @@
 
-.footer-contacts  {
-  .link { 
-    text-decoration: none;
-  }
-}
-    
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -18,9 +12,24 @@
     align-items: center;
     text-align: center;
 
-    // justify-content: center;
-    // justify-content: space-between;
-    // align-items: baseline;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+  }
+  
+  @media screen and (min-width: $tablet) {
+      width: $tablet;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: unset;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: unset;
+    text-align: unset;
+}
   }
   
   .footer-contacts__logo {
@@ -29,12 +38,9 @@
   }
   
   
-  .footer .logo {
-    .accent {
-      color: var(--secondary-text-color);
-    }
-  } 
-  
+.footer-contacts__logo .accent {
+  color: var(--secondary-text-color);
+}
   
   .footer-contacts__address {
     // width: 231px;
@@ -119,28 +125,53 @@ margin-bottom: 60px;
     background-color: var(--accent-color);
   }
   
+  
+  // FOOTER FORM
+
+
+  .footer-form {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      width: 450px;  
+  }
+
+   @media screen and (min-width: $desktop) {
+    width: 450px;
+     }
+  }
+
   .footer-form__field {
-    // width: 358px;
     width: 100%;
     height: 50px;
-    // margin-right: 12px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px; 
     background: #2F303A;
     color: #ffffff;
-
     margin-bottom: 20px;
-    
+
+    @media screen and (min-width: $tablet) {
+      width: 450px;  
+  }
+
+   @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+     }
   }
   
+
   .footer-form__wrap {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+
+    @media screen and (min-width: $desktop) {
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: unset;
+       }
   }
   
   .footer-form__button {
