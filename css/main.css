@@ -1197,8 +1197,20 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-networks__list {
+    margin-bottom: unset;
+  }
+}
+
 .footer-contacts__list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts__list {
+    margin-bottom: unset;
+  }
 }
 
 .footer-contacts__list li:first-child {

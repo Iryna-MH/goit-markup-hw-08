@@ -71,11 +71,20 @@
 
   .footer-networks__list {
 margin-bottom: 60px;
+
+@media screen and (min-width: $desktop) {
+  margin-bottom: unset;
+}
   }
 
   .footer-contacts__list {
     margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: unset;
+    }
   }
+  
   .footer-contacts__list li {
     &:first-child {
       margin-bottom: 9px;
